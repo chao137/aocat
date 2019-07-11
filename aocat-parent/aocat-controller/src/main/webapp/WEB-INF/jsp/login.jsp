@@ -1,31 +1,138 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<!DOCTYPE html >
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<link href="static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-<title>登录</title>
+<meta charset="UTF-8">
+<title>登录页-澳猫团</title>
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" href="static/css/reset.css">
+<link rel="stylesheet" href="static/css/base1.css">
+<link rel="stylesheet" href="static/css/login.css">
+<!-- 视图窗口，移动端特属的标签。 -->
+<meta name="viewport"
+	content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no" />
+<link media="screen and (min-width: 992px) and (max-width:1200px)"
+	rel="stylesheet" href="static/css/base1-small.css">
+<link media="screen and (min-width: 992px) and (max-width:1200px)"
+	rel="stylesheet" href="static/css/login-small.css">
+<link media="screen and (min-width: 768px) and (max-width:991px)"
+	rel="stylesheet" href="static/css/base1-pad.css">
+<link media="screen and (min-width: 768px) and (max-width:991px)"
+	rel="stylesheet" href="static/css/login-pad.css">
 </head>
 <body>
-	<div class="container">
-		<form class="form-signin" action="login" method="post">
-			${msg }
-			<h2 class="form-signin-heading">请登录</h2>
-			<label for="inputName" class="sr-only">用户名</label> <input type="text"
-				id="inputName" name="name" class="form-control" placeholder="用户名"
-				required autofocus value="${name }"> <br /> <br /> <label
-				for="inputPass" class="sr-only">密码</label> <input type="password"
-				id="inputPass" name="pass" class="form-control" placeholder="密码"
-				required> <br /> <br />
-			<button class="btn btn-lg btn-primary btn-block" type="submit">登录</button>
-		</form>
+	<!-- 顶部 -->
+	<header>
+		<!-- 搜索和logo -->
+		<div class="logoAndSearch textWarp w1190 clearfix">
+			<div class="logo">
+				<a href="#">澳猫网</a>
+			</div>
+			<div class="LAStxt">欢迎登录</div>
+			<div class="search">
+				<div class="txt">
+					<input type="text" placeholder="Swisse/澳洲"> <em></em>
+				</div>
+				<a href="#" class="btn"> 搜索 </a>
+				<ul>
+					<li><a target="_blank" href="#">胶原蛋白</a></li>
+					<li><a target="_blank" href="#">叶绿素</a></li>
+					<li><a target="_blank" href="#">睡眠片</a></li>
+					<li><a target="_blank" href="#">儿童维生素</a></li>
+					<li><a target="_blank" href="#">鱼肝油</a></li>
+					<li><a target="_blank" href="#">保健品</a></li>
+					<li><a target="_blank" href="#">美容</a></li>
+					<li class="BN"><a target="_blank" href="#">运动保健</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<!-- 中间内容 -->
+	<div class="mainArea">
+		<div class="mainAreaW textWarp w1190">
+			<div class="mainContent boxS">
+				<div class="MCup clearfix">
+					<div class="MCright W310">
+						<h3 class="clearfix">
+							<span>登录澳猫团</span> <a target="_blank" href="register.html">免费注册</a>
+						</h3>
+						<form action="login" method="post">
+						<p class="userName">
+							<em></em> <input id="phone" name="name" class="W310" placeholder="请输入您的手机号/邮箱"
+								type="text">
+						</p>
+						<p class="passWord">
+							<em></em> <input class="W310" name="pass" placeholder="请输入密码" type="password">
+						</p>
+						<!-- <p class="clearfix yzm">
+							<input type="text" placeholder="验证码"> <span class="Ypic">
+								<span class="YP"></span> <a href="#">换一张</a>
+							</span>
+						</p> -->
+						<p class="clearfix Jzmm">
+							<span class="checkbox checked"></span> <span>记住密码</span> <a
+								target="_blank" href="#">忘记密码？</a>
+						</p>
+						<input type="submit" class="loGin W310" value="登录"/>
+						</form>
+					</div>
+					<div class="MCleft W115">
+						<img src="static/images/AppEr.png" alt="二维码">
+						<p>扫码下载客户端</p>
+						<div class="pL">
+							<span>手机可直接访问</span> <strong>m.aumalls.com</strong>
+						</div>
+					</div>
+				</div>
+				<div class="MCdown">
+					<p>使用其他账户登录</p>
+					<ul>
+						<li class="clearfix"><em></em> <a href="#">QQ登录</a></li>
+						<li class="clearfix"><em></em> <a href="#">微博登录</a></li>
+						<li class="clearfix"><em></em> <a href="#">腾讯微博</a></li>
+						<li class="clearfix"><em></em> <a href="#">微信登录</a></li>
+						<li class="clearfix BN"><em></em> <a href="#">百度登录</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
 	</div>
-	<!-- /container -->
-
-
-	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-	<script src="static/bootstrap/js/bootstrap.min.js"></script>
-	<script src="static/jquery/jquery-3.4.1.min.js"></script>
+	<!-- 底部 -->
+	<footer>
+		<div class="txt textWarp w1190">
+			<ul>
+				<li><a href="#">关于澳猫海淘</a></li>
+				<li><a href="#">商家入驻</a></li>
+				<li><a href="#">网站合作</a></li>
+				<li><a href="#">友情链接</a></li>
+				<li><a href="#">澳猫公益</a></li>
+				<li><a href="#">法律声明</a></li>
+				<li><a href="#">诚聘英才</a></li>
+				<li><a href="#">联系我们</a></li>
+				<li><a href="#">网站地图</a></li>
+			</ul>
+			<p>
+				澳大利亚Health more - 河南康多多贸易有限公司 - 河南澳蜜电子商务有限公司 版权所有<br> Copyright
+				© 20015-2018 澳猫aumalls.com 版权所有, 豫ICP备15030837号-1
+			</p>
+			<div class="ALLN"></div>
+		</div>
+	</footer>
+	<script src="static/js/jquery-1.7.2.min.js"></script>
+	<script src="static/js/jquery.lazyload.min.js"></script>
+	<script src="static/js/login.js"></script>
+	<script type="text/javascript">
+/* 		$(document).ready(function() {
+			$(".loGin").click(function() {
+				alert($('input').attr("#phone"));
+				$.post("login", {
+					name : "qq",
+				}, function(data, status) {
+					alert("数据: \n" + data + "\n状态: " + status);
+				});
+			});
+		}); */
+	</script>
 </body>
 </html>

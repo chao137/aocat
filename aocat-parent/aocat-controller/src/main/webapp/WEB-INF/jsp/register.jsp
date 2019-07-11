@@ -66,12 +66,12 @@
 								<em></em> <input class="W310" name="pass" placeholder="请输入密码"
 									type="password">
 							</p>
-							<p class="passWord">
-								<em></em> <input class="W310" name="address" placeholder="请输入地址"
+							<p>
+								<em>地址</em> <input class="W310" name="address" placeholder="请输入地址"
 									type="text">
 							</p>
-							<p class="passWord">
-								<em></em> <input class="W310" name="phone" placeholder="请输入电话"
+							<p>
+								<em>电话</em> <input class="W310" name="phone" placeholder="请输入电话"
 									type="text">
 							</p>
 							<!-- <p class="clearfix yzm">
@@ -83,8 +83,9 @@
 								<span class="checkbox checked"></span> <span>记住密码</span> <a
 									target="_blank" href="#">忘记密码？</a>
 							</p> -->
-							<input type="submit" class="loGin W310" value="登录" />
+							<input type="submit" class="loGin W310" value="注册" />
 						</form>
+						<p>${msg }</p>
 					</div>
 					<div class="MCleft W115">
 						<img src="static/images/AppEr.png" alt="二维码">

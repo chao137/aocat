@@ -20,9 +20,15 @@ public class UserServiceImpl implements UserService {
 	}
 
 	@Override
-	public void insertUser(User user) {
+	public boolean insertUser(User user) {
 		// TODO Auto-generated method stub
-		userMapper.insertUser(user);
+		int ret = userMapper.findByName(user.getName());
+		if (ret > 0) {
+			return false;
+		} else {
+			userMapper.insertUser(user);
+			return true;
+		}
 	}
 
 }

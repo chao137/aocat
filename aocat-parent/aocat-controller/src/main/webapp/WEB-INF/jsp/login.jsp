@@ -57,24 +57,25 @@
 						<h3 class="clearfix">
 							<span>登录澳猫团</span> <a target="_blank" href="register.html">免费注册</a>
 						</h3>
-						<form action="login" method="post">
-						<p class="userName">
-							<em></em> <input id="phone" name="name" class="W310" placeholder="请输入您的手机号/邮箱"
-								type="text">
-						</p>
-						<p class="passWord">
-							<em></em> <input class="W310" name="pass" placeholder="请输入密码" type="password">
-						</p>
-						<!-- <p class="clearfix yzm">
+						<form id = "logdata" action="login" method="post">
+							<p class="userName">
+								<em></em> <input id="phone" name="name" class="W310"
+									placeholder="请输入您的手机号/邮箱" type="text">
+							</p>
+							<p class="passWord">
+								<em></em> <input class="W310" name="pass" placeholder="请输入密码"
+									type="password">
+							</p>
+							<!-- <p class="clearfix yzm">
 							<input type="text" placeholder="验证码"> <span class="Ypic">
 								<span class="YP"></span> <a href="#">换一张</a>
 							</span>
 						</p> -->
-						<p class="clearfix Jzmm">
-							<span class="checkbox checked"></span> <span>记住密码</span> <a
-								target="_blank" href="#">忘记密码？</a>
-						</p>
-						<input type="submit" class="loGin W310" value="登录"/>
+							<p class="clearfix Jzmm">
+								<span class="checkbox checked"></span> <span>记住密码</span> <a
+									target="_blank" href="#">忘记密码？</a>
+							</p>
+							<input type="submit" class="loGin W310" value="登录" />
 						</form>
 					</div>
 					<div class="MCleft W115">
@@ -122,14 +123,19 @@
 	<script src="static/js/jquery-1.7.2.min.js"></script>
 	<script src="static/js/jquery.lazyload.min.js"></script>
 	<script src="static/js/login.js"></script>
+
 	<script type="text/javascript">
-/* 		$(document).ready(function() {
+/*  		$(document).ready(function() {
 			$(".loGin").click(function() {
-				alert($('input').attr("#phone"));
-				$.post("login", {
-					name : "qq",
-				}, function(data, status) {
-					alert("数据: \n" + data + "\n状态: " + status);
+				
+				$.ajax({
+					url: "login",
+					type: "post",
+					data: $("#logdata").serilaze(),
+					dataType: "text",
+					success: function (data){
+						alert("hello");
+					}
 				});
 			});
 		}); */

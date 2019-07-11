@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import com.github.pagehelper.PageInfo;
 
+import cn.edu.cuit.aocat.constant.PageConstant;
 import cn.edu.cuit.aocat.entity.Goods;
 import cn.edu.cuit.aocat.service.GoodsService;
 
@@ -20,8 +21,8 @@ public class GoodsController {
 	
 	@RequestMapping("/goods")
 	public String GoodsList(Model model, @RequestParam(required=false,defaultValue="1")int pageNum) {
-		PageInfo<Goods> pageInfo = goodsService.findGoods(pageNum, 5);
+		PageInfo<Goods> pageInfo = goodsService.findGoods(pageNum,PageConstant.PAGE_SIZE);
 		model.addAttribute("list", pageInfo);
-		return "goodsList";
+		return "list";
 	}
 }

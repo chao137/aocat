@@ -6,9 +6,9 @@
 	<meta charset="UTF-8">
 	<title>购物车-澳猫团</title>
 	<link rel="shortcut icon" href="favicon.ico">
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/base.css">
-	<link rel="stylesheet" href="css/Cart.css">
+	<link rel="stylesheet" href="static/css/reset.css">
+	<link rel="stylesheet" href="static/css/base.css">
+	<link rel="stylesheet" href="static/css/Cart.css">
     <script >
     $(function() {
 	// 购物车的复选框全选
@@ -304,7 +304,7 @@
 			<ul class="IAbdArea">
 				<li class="IAbdw">
 					<span class="lincheck checkbox"></span>
-					<img src="images/cartpro.jpg" alt="">
+					<img src="static/images/cartpro.jpg" alt="">
 					<p>
 						<a class="pro" href="#">Blackmores EPo月见草 160粒保养卵巢 调节内分泌</a>
 						<a class="use" href="#">
@@ -338,7 +338,7 @@
 				</li>
 				<li class="IAbdw">
 					<span class="lincheck checkbox"></span>
-					<img src="images/cartpro.jpg" alt="">
+					<img src="static/images/cartpro.jpg" alt="">
 					<p>
 						<a class="pro" href="#">Blackmores EPo月见草 160粒保养卵巢 调节内分泌</a>
 						<a class="use" href="#">
@@ -414,7 +414,7 @@
 						<ul>
 							<li>
 								<div class="Repic">
-									<img src="images/cart1.jpg" alt="">
+									<img src="static/images/cart1.jpg" alt="">
 								</div>
 								<div class="ReTxt">
 									<a href="#">Swisse 澳洲瑞思胶原蛋白补充胶原蛋白，让你更美...</a>
@@ -427,7 +427,7 @@
 							</li>
 							<li>
 								<div class="Repic">
-									<img src="images/cart2.jpg" alt="">
+									<img src="static/images/cart2.jpg" alt="">
 								</div>
 								<div class="ReTxt">
 									<a href="#">Swisse 澳洲瑞思胶原蛋白补充胶原蛋白，让你更美...</a>
@@ -440,7 +440,7 @@
 							</li>
 							<li>
 								<div class="Repic">
-									<img src="images/cart3.jpg" alt="">
+									<img src="static/images/cart3.jpg" alt="">
 								</div>
 								<div class="ReTxt">
 									<a href="#">Swisse 澳洲瑞思胶原蛋白补充胶原蛋白，让你更美...</a>
@@ -453,7 +453,7 @@
 							</li>
 							<li>
 								<div class="Repic">
-									<img src="images/cart4.jpg" alt="">
+									<img src="static/images/cart4.jpg" alt="">
 								</div>
 								<div class="ReTxt">
 									<a href="#">Swisse 澳洲瑞思胶原蛋白补充胶原蛋白，让你更美...</a>
@@ -466,76 +466,7 @@
 							</li>
 							<li>
 								<div class="Repic">
-									<img src="images/cart5.jpg" alt="">
-								</div>
-								<div class="ReTxt">
-									<a href="#">Swisse 澳洲瑞思胶原蛋白补充胶原蛋白，让你更美...</a>
-									<p><strong class="c065">￥256 </strong><s>￥388</s></p>
-									<p class="collect">
-										<a href="#">5185人已评价</a>
-										<span><em></em>收藏商品</span>
-									</p>
-								</div>
-							</li>
-						</ul>
-					</li>
-					<li class="ReConWuli CLConWuli">
-						<ul>
-							<li>
-								<div class="Repic">
-									<img src="images/cart1.jpg" alt="">
-								</div>
-								<div class="ReTxt">
-									<a href="#">Swisse 澳洲瑞思胶原蛋白补充胶原蛋白，让你更美...</a>
-									<p><strong class="c065">￥256 </strong><s>￥388</s></p>
-									<p class="collect">
-										<a href="#">5185人已评价</a>
-										<span><em></em>收藏商品</span>
-									</p>
-								</div>
-							</li>
-							<li>
-								<div class="Repic">
-									<img src="images/cart2.jpg" alt="">
-								</div>
-								<div class="ReTxt">
-									<a href="#">Swisse 澳洲瑞思胶原蛋白补充胶原蛋白，让你更美...</a>
-									<p><strong class="c065">￥256 </strong><s>￥388</s></p>
-									<p class="collect">
-										<a href="#">5185人已评价</a>
-										<span><em></em>收藏商品</span>
-									</p>
-								</div>
-							</li>
-							<li>
-								<div class="Repic">
-									<img src="images/cart3.jpg" alt="">
-								</div>
-								<div class="ReTxt">
-									<a href="#">Swisse 澳洲瑞思胶原蛋白补充胶原蛋白，让你更美...</a>
-									<p><strong class="c065">￥256 </strong><s>￥388</s></p>
-									<p class="collect">
-										<a href="#">5185人已评价</a>
-										<span><em></em>收藏商品</span>
-									</p>
-								</div>
-							</li>
-							<li>
-								<div class="Repic">
-									<img src="images/cart4.jpg" alt="">
-								</div>
-								<div class="ReTxt">
-									<a href="#">Swisse 澳洲瑞思胶原蛋白补充胶原蛋白，让你更美...</a>
-									<p><strong class="c065">￥256 </strong><s>￥388</s></p>
-									<p class="collect">
-										<a href="#">5185人已评价</a>
-										<span><em></em>收藏商品</span>
-									</p>
-								</div>
-							</li>
-							<li>
-								<div class="Repic">
-									<img src="images/cart5.jpg" alt="">
+									<img src="static/images/cart5.jpg" alt="">
 								</div>
 								<div class="ReTxt">
 									<a href="#">Swisse 澳洲瑞思胶原蛋白补充胶原蛋白，让你更美...</a>
@@ -552,7 +483,7 @@
 						<ul>
 							<li>
 								<div class="Repic">
-									<img src="images/cart1.jpg" alt="">
+									<img src="static/images/cart1.jpg" alt="">
 								</div>
 								<div class="ReTxt">
 									<a href="#">Swisse 澳洲瑞思胶原蛋白补充胶原蛋白，让你更美...</a>
@@ -565,7 +496,7 @@
 							</li>
 							<li>
 								<div class="Repic">
-									<img src="images/cart2.jpg" alt="">
+									<img src="static/images/cart2.jpg" alt="">
 								</div>
 								<div class="ReTxt">
 									<a href="#">Swisse 澳洲瑞思胶原蛋白补充胶原蛋白，让你更美...</a>
@@ -578,7 +509,7 @@
 							</li>
 							<li>
 								<div class="Repic">
-									<img src="images/cart3.jpg" alt="">
+									<img src="static/images/cart3.jpg" alt="">
 								</div>
 								<div class="ReTxt">
 									<a href="#">Swisse 澳洲瑞思胶原蛋白补充胶原蛋白，让你更美...</a>
@@ -591,7 +522,7 @@
 							</li>
 							<li>
 								<div class="Repic">
-									<img src="images/cart4.jpg" alt="">
+									<img src="static/images/cart4.jpg" alt="">
 								</div>
 								<div class="ReTxt">
 									<a href="#">Swisse 澳洲瑞思胶原蛋白补充胶原蛋白，让你更美...</a>
@@ -604,7 +535,76 @@
 							</li>
 							<li>
 								<div class="Repic">
-									<img src="images/cart5.jpg" alt="">
+									<img src="static/images/cart5.jpg" alt="">
+								</div>
+								<div class="ReTxt">
+									<a href="#">Swisse 澳洲瑞思胶原蛋白补充胶原蛋白，让你更美...</a>
+									<p><strong class="c065">￥256 </strong><s>￥388</s></p>
+									<p class="collect">
+										<a href="#">5185人已评价</a>
+										<span><em></em>收藏商品</span>
+									</p>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li class="ReConWuli CLConWuli">
+						<ul>
+							<li>
+								<div class="Repic">
+									<img src="static/images/cart1.jpg" alt="">
+								</div>
+								<div class="ReTxt">
+									<a href="#">Swisse 澳洲瑞思胶原蛋白补充胶原蛋白，让你更美...</a>
+									<p><strong class="c065">￥256 </strong><s>￥388</s></p>
+									<p class="collect">
+										<a href="#">5185人已评价</a>
+										<span><em></em>收藏商品</span>
+									</p>
+								</div>
+							</li>
+							<li>
+								<div class="Repic">
+									<img src="static/images/cart2.jpg" alt="">
+								</div>
+								<div class="ReTxt">
+									<a href="#">Swisse 澳洲瑞思胶原蛋白补充胶原蛋白，让你更美...</a>
+									<p><strong class="c065">￥256 </strong><s>￥388</s></p>
+									<p class="collect">
+										<a href="#">5185人已评价</a>
+										<span><em></em>收藏商品</span>
+									</p>
+								</div>
+							</li>
+							<li>
+								<div class="Repic">
+									<img src="static/images/cart3.jpg" alt="">
+								</div>
+								<div class="ReTxt">
+									<a href="#">Swisse 澳洲瑞思胶原蛋白补充胶原蛋白，让你更美...</a>
+									<p><strong class="c065">￥256 </strong><s>￥388</s></p>
+									<p class="collect">
+										<a href="#">5185人已评价</a>
+										<span><em></em>收藏商品</span>
+									</p>
+								</div>
+							</li>
+							<li>
+								<div class="Repic">
+									<img src="static/images/cart4.jpg" alt="">
+								</div>
+								<div class="ReTxt">
+									<a href="#">Swisse 澳洲瑞思胶原蛋白补充胶原蛋白，让你更美...</a>
+									<p><strong class="c065">￥256 </strong><s>￥388</s></p>
+									<p class="collect">
+										<a href="#">5185人已评价</a>
+										<span><em></em>收藏商品</span>
+									</p>
+								</div>
+							</li>
+							<li>
+								<div class="Repic">
+									<img src="static/images/cart5.jpg" alt="">
 								</div>
 								<div class="ReTxt">
 									<a href="#">Swisse 澳洲瑞思胶原蛋白补充胶原蛋白，让你更美...</a>
@@ -638,7 +638,7 @@
 						<ul>
 							<li>
 								<div class="Repic">
-									<img src="images/cart6.jpg" alt="">
+									<img src="static/images/cart6.jpg" alt="">
 								</div>
 								<div class="ReTxt">
 									<a href="#">Swisse 澳洲瑞思胶原蛋白补充胶原蛋白，让你更美...</a>
@@ -651,7 +651,7 @@
 							</li>
 							<li>
 								<div class="Repic">
-									<img src="images/cart7.jpg" alt="">
+									<img src="static/images/cart7.jpg" alt="">
 								</div>
 								<div class="ReTxt">
 									<a href="#">Swisse 澳洲瑞思胶原蛋白补充胶原蛋白，让你更美...</a>
@@ -664,7 +664,7 @@
 							</li>
 							<li>
 								<div class="Repic">
-									<img src="images/cart8.jpg" alt="">
+									<img src="static/images/cart8.jpg" alt="">
 								</div>
 								<div class="ReTxt">
 									<a href="#">Swisse 澳洲瑞思胶原蛋白补充胶原蛋白，让你更美...</a>
@@ -677,7 +677,7 @@
 							</li>
 							<li>
 								<div class="Repic">
-									<img src="images/cart9.jpg" alt="">
+									<img src="static/images/cart9.jpg" alt="">
 								</div>
 								<div class="ReTxt">
 									<a href="#">Swisse 澳洲瑞思胶原蛋白补充胶原蛋白，让你更美...</a>
@@ -690,76 +690,7 @@
 							</li>
 							<li>
 								<div class="Repic">
-									<img src="images/cart10.jpg" alt="">
-								</div>
-								<div class="ReTxt">
-									<a href="#">Swisse 澳洲瑞思胶原蛋白补充胶原蛋白，让你更美...</a>
-									<p><strong class="c065">￥256 </strong><s>￥388</s></p>
-									<p class="collect">
-										<a href="#">5185人已评价</a>
-										<span><em></em>加入心愿单</span>
-									</p>
-								</div>
-							</li>
-						</ul>
-					</li>
-					<li class="ReConWuli HRConWuli">
-						<ul>
-							<li>
-								<div class="Repic">
-									<img src="images/cart6.jpg" alt="">
-								</div>
-								<div class="ReTxt">
-									<a href="#">Swisse 澳洲瑞思胶原蛋白补充胶原蛋白，让你更美...</a>
-									<p><strong class="c065">￥256 </strong><s>￥388</s></p>
-									<p class="collect">
-										<a href="#">5185人已评价</a>
-										<span><em></em>加入心愿单</span>
-									</p>
-								</div>
-							</li>
-							<li>
-								<div class="Repic">
-									<img src="images/cart7.jpg" alt="">
-								</div>
-								<div class="ReTxt">
-									<a href="#">Swisse 澳洲瑞思胶原蛋白补充胶原蛋白，让你更美...</a>
-									<p><strong class="c065">￥256 </strong><s>￥388</s></p>
-									<p class="collect">
-										<a href="#">5185人已评价</a>
-										<span><em></em>加入心愿单</span>
-									</p>
-								</div>
-							</li>
-							<li>
-								<div class="Repic">
-									<img src="images/cart8.jpg" alt="">
-								</div>
-								<div class="ReTxt">
-									<a href="#">Swisse 澳洲瑞思胶原蛋白补充胶原蛋白，让你更美...</a>
-									<p><strong class="c065">￥256 </strong><s>￥388</s></p>
-									<p class="collect">
-										<a href="#">5185人已评价</a>
-										<span><em></em>加入心愿单</span>
-									</p>
-								</div>
-							</li>
-							<li>
-								<div class="Repic">
-									<img src="images/cart9.jpg" alt="">
-								</div>
-								<div class="ReTxt">
-									<a href="#">Swisse 澳洲瑞思胶原蛋白补充胶原蛋白，让你更美...</a>
-									<p><strong class="c065">￥256 </strong><s>￥388</s></p>
-									<p class="collect">
-										<a href="#">5185人已评价</a>
-										<span><em></em>加入心愿单</span>
-									</p>
-								</div>
-							</li>
-							<li>
-								<div class="Repic">
-									<img src="images/cart10.jpg" alt="">
+									<img src="static/images/cart10.jpg" alt="">
 								</div>
 								<div class="ReTxt">
 									<a href="#">Swisse 澳洲瑞思胶原蛋白补充胶原蛋白，让你更美...</a>
@@ -776,7 +707,7 @@
 						<ul>
 							<li>
 								<div class="Repic">
-									<img src="images/cart6.jpg" alt="">
+									<img src="static/images/cart6.jpg" alt="">
 								</div>
 								<div class="ReTxt">
 									<a href="#">Swisse 澳洲瑞思胶原蛋白补充胶原蛋白，让你更美...</a>
@@ -789,7 +720,7 @@
 							</li>
 							<li>
 								<div class="Repic">
-									<img src="images/cart7.jpg" alt="">
+									<img src="static/images/cart7.jpg" alt="">
 								</div>
 								<div class="ReTxt">
 									<a href="#">Swisse 澳洲瑞思胶原蛋白补充胶原蛋白，让你更美...</a>
@@ -802,7 +733,7 @@
 							</li>
 							<li>
 								<div class="Repic">
-									<img src="images/cart8.jpg" alt="">
+									<img src="static/images/cart8.jpg" alt="">
 								</div>
 								<div class="ReTxt">
 									<a href="#">Swisse 澳洲瑞思胶原蛋白补充胶原蛋白，让你更美...</a>
@@ -815,7 +746,7 @@
 							</li>
 							<li>
 								<div class="Repic">
-									<img src="images/cart9.jpg" alt="">
+									<img src="static/images/cart9.jpg" alt="">
 								</div>
 								<div class="ReTxt">
 									<a href="#">Swisse 澳洲瑞思胶原蛋白补充胶原蛋白，让你更美...</a>
@@ -828,7 +759,76 @@
 							</li>
 							<li>
 								<div class="Repic">
-									<img src="images/cart10.jpg" alt="">
+									<img src="static/images/cart10.jpg" alt="">
+								</div>
+								<div class="ReTxt">
+									<a href="#">Swisse 澳洲瑞思胶原蛋白补充胶原蛋白，让你更美...</a>
+									<p><strong class="c065">￥256 </strong><s>￥388</s></p>
+									<p class="collect">
+										<a href="#">5185人已评价</a>
+										<span><em></em>加入心愿单</span>
+									</p>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li class="ReConWuli HRConWuli">
+						<ul>
+							<li>
+								<div class="Repic">
+									<img src="static/images/cart6.jpg" alt="">
+								</div>
+								<div class="ReTxt">
+									<a href="#">Swisse 澳洲瑞思胶原蛋白补充胶原蛋白，让你更美...</a>
+									<p><strong class="c065">￥256 </strong><s>￥388</s></p>
+									<p class="collect">
+										<a href="#">5185人已评价</a>
+										<span><em></em>加入心愿单</span>
+									</p>
+								</div>
+							</li>
+							<li>
+								<div class="Repic">
+									<img src="static/images/cart7.jpg" alt="">
+								</div>
+								<div class="ReTxt">
+									<a href="#">Swisse 澳洲瑞思胶原蛋白补充胶原蛋白，让你更美...</a>
+									<p><strong class="c065">￥256 </strong><s>￥388</s></p>
+									<p class="collect">
+										<a href="#">5185人已评价</a>
+										<span><em></em>加入心愿单</span>
+									</p>
+								</div>
+							</li>
+							<li>
+								<div class="Repic">
+									<img src="static/images/cart8.jpg" alt="">
+								</div>
+								<div class="ReTxt">
+									<a href="#">Swisse 澳洲瑞思胶原蛋白补充胶原蛋白，让你更美...</a>
+									<p><strong class="c065">￥256 </strong><s>￥388</s></p>
+									<p class="collect">
+										<a href="#">5185人已评价</a>
+										<span><em></em>加入心愿单</span>
+									</p>
+								</div>
+							</li>
+							<li>
+								<div class="Repic">
+									<img src="static/images/cart9.jpg" alt="">
+								</div>
+								<div class="ReTxt">
+									<a href="#">Swisse 澳洲瑞思胶原蛋白补充胶原蛋白，让你更美...</a>
+									<p><strong class="c065">￥256 </strong><s>￥388</s></p>
+									<p class="collect">
+										<a href="#">5185人已评价</a>
+										<span><em></em>加入心愿单</span>
+									</p>
+								</div>
+							</li>
+							<li>
+								<div class="Repic">
+									<img src="static/images/cart10.jpg" alt="">
 								</div>
 								<div class="ReTxt">
 									<a href="#">Swisse 澳洲瑞思胶原蛋白补充胶原蛋白，让你更美...</a>
@@ -927,7 +927,7 @@
 		<div class="Ileft">
 			<div class="er">
 				<div class="erPic">
-					<img src="images/WXe.png" alt="二维码">
+					<img src="static/images/WXe.png" alt="二维码">
 				</div>
 				<span>扫码下载澳猫APP</span>
 			</div>
@@ -941,7 +941,7 @@
 						<strong>扫码加微信</strong>
 						</p>
 						<div class="wxe">
-							<img src="images/WXe.png" alt="二维码">
+							<img src="static/images/WXe.png" alt="二维码">
 						</div>
 					</div>
 				</a>
@@ -993,10 +993,10 @@
 		</div>
 	</div>
 </footer>
-<script src="js/jquery-1.7.2.min.js"></script>
-<script src="js/jquery.lazyload.min.js"></script>
-<script src="js/cart.js"></script>
-<script src="js/base.js"></script>
+<script src="static/js/jquery-1.7.2.min.js"></script>
+<script src="static/js/jquery.lazyload.min.js"></script>
+<script src="static/js/cart.js"></script>
+<script src="static/js/base.js"></script>
 
 </body>
 </html>

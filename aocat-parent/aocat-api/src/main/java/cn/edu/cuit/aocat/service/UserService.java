@@ -1,7 +1,9 @@
 package cn.edu.cuit.aocat.service;
 
+import cn.edu.cuit.aocat.entity.User;
+
 public interface UserService {
 
-	boolean login(String name, String pass);
+	User login(String name, String pass);
 
 }

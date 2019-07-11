@@ -6,9 +6,9 @@
 	<meta charset="UTF-8">
 	<title>全部订单-我的订单-会员中心-澳猫团</title>
 	<link rel="shortcut icon" href="favicon.ico">
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/base.css">
-	<link rel="stylesheet" href="css/Member.css">
+	<link rel="stylesheet" href="static/css/reset.css">
+	<link rel="stylesheet" href="static/css/base.css">
+	<link rel="stylesheet" href="static/css/Member.css">
 </head>
 <body>
 	<header class="wrap-all">
@@ -554,7 +554,7 @@
 										<ul class="ListTable">
 											<li class="one clearfix">
 												<a href="">
-													<div class="pruPic"><img src="images/lproduct10.png" alt=""></div>
+													<div class="pruPic"><img src="static/images/lproduct10.png" alt=""></div>
 													<div class="pruTitle">
 														Swisse 澳洲活力胶原蛋白液 500毫升/瓶促进皮肤弹性和去皱纹，促进发质和指甲的生长。
 													</div>
@@ -586,7 +586,7 @@
 										<ul class="ListTable">
 											<li class="one clearfix">
 												<a href="">
-													<div class="pruPic"><img src="images/lproduct10.png" alt=""></div>
+													<div class="pruPic"><img src="static/images/lproduct10.png" alt=""></div>
 													<div class="pruTitle">
 														Swisse 澳洲活力胶原蛋白液 500毫升/瓶促进皮肤弹性和去皱纹，促进发质和指甲的生长。
 													</div>
@@ -619,7 +619,7 @@
 										<ul class="ListTable">
 											<li class="one clearfix">
 												<a href="">
-													<div class="pruPic"><img src="images/lproduct10.png" alt=""></div>
+													<div class="pruPic"><img src="static/images/lproduct10.png" alt=""></div>
 													<div class="pruTitle">
 														Swisse 澳洲活力胶原蛋白液 500毫升/瓶促进皮肤弹性和去皱纹，促进发质和指甲的生长。
 													</div>
@@ -652,7 +652,7 @@
 										<ul class="ListTable">
 											<li class="one clearfix">
 												<a href="">
-													<div class="pruPic"><img src="images/lproduct10.png" alt=""></div>
+													<div class="pruPic"><img src="static/images/lproduct10.png" alt=""></div>
 													<div class="pruTitle">
 														Swisse 澳洲活力胶原蛋白液 500毫升/瓶促进皮肤弹性和去皱纹，促进发质和指甲的生长。
 													</div>
@@ -686,7 +686,7 @@
 										<ul class="ListTable">
 											<li class="one clearfix">
 												<a href="">
-													<div class="pruPic"><img src="images/lproduct10.png" alt=""></div>
+													<div class="pruPic"><img src="static/images/lproduct10.png" alt=""></div>
 													<div class="pruTitle">
 														Swisse 澳洲活力胶原蛋白液 500毫升/瓶促进皮肤弹性和去皱纹，促进发质和指甲的生长。
 													</div>
@@ -798,7 +798,7 @@
 			<div class="Ileft">
 				<div class="er">
 					<div class="erPic">
-						<img src="images/WXe.png" alt="二维码">
+						<img src="static/images/WXe.png" alt="二维码">
 					</div>
 					<span>扫码下载澳猫APP</span>
 				</div>
@@ -812,7 +812,7 @@
 							<strong>扫码加微信</strong>
 							</p>
 							<div class="wxe">
-								<img src="images/WXe.png" alt="二维码">
+								<img src="static/images/WXe.png" alt="二维码">
 							</div>
 						</div>
 					</a>
@@ -864,8 +864,8 @@
             </div>
         </div>
     </footer>
-    <script src="js/jquery-1.7.2.min.js"></script>
-    <script src="js/member.js"></script>
-    <script src="js/base.js"></script>
+    <script src="static/js/jquery-1.7.2.min.js"></script>
+    <script src="static/js/member.js"></script>
+    <script src="static/js/base.js"></script>
 </body>
 </html>

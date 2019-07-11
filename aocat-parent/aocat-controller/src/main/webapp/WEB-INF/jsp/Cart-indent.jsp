@@ -6,9 +6,9 @@
 	<meta charset="UTF-8">
 	<title>提交订单-购物车-澳猫团</title>
 	<link rel="shortcut icon" href="favicon.ico">
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/base.css">
-	<link rel="stylesheet" href="css/Cart.css">
+	<link rel="stylesheet" href="static/css/reset.css">
+	<link rel="stylesheet" href="static/css/base.css">
+	<link rel="stylesheet" href="static/css/Cart.css">
 </head>
 <body>
 <!-- 顶部 -->
@@ -383,7 +383,7 @@
 			<div class="Ileft">
 				<div class="er">
 					<div class="erPic">
-						<img src="images/WXe.png" alt="二维码">
+						<img src="static/images/WXe.png" alt="二维码">
 					</div>
 					<span>扫码下载澳猫APP</span>
 				</div>
@@ -397,7 +397,7 @@
 							<strong>扫码加微信</strong>
 							</p>
 							<div class="wxe">
-								<img src="images/WXe.png" alt="二维码">
+								<img src="static/images/WXe.png" alt="二维码">
 							</div>
 						</div>
 					</a>
@@ -520,9 +520,9 @@
 		<p class="close">+</p>
 	</div>
 </div>
-<script src="js/jquery-1.7.2.min.js"></script>
-<script src="js/jquery.lazyload.min.js"></script>
-<script src="js/base.js"></script>
+<script src="static/js/jquery-1.7.2.min.js"></script>
+<script src="static/js/jquery.lazyload.min.js"></script>
+<script src="static/js/base.js"></script>
 <script>
 	// 提交订单
 	$(function() {

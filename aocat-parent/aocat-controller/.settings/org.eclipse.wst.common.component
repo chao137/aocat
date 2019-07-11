@@ -10,6 +10,9 @@
         <dependent-module archiveName="aocat-entity-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/aocat-entity/aocat-entity">
             <dependency-type>uses</dependency-type>
         </dependent-module>
+        <dependent-module archiveName="aocat-common-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/aocat-common/aocat-common">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <property name="context-root" value="aocat-controller"/>
         <property name="java-output-path" value="/aocat-controller/target/classes"/>
     </wb-module>

@@ -72,5 +72,10 @@
 			<artifactId>aocat-entity</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
+		<dependency>
+			<groupId>cn.edu.cuit</groupId>
+			<artifactId>aocat-common</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 </project>

@@ -140,5 +140,6 @@
 		<module>aocat-api</module>
 		<module>aocat-service</module>
 		<module>aocat-controller</module>
+		<module>aocat-common</module>
 	</modules>
 </project>

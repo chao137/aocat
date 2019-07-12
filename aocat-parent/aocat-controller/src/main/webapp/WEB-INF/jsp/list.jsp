@@ -22,8 +22,8 @@
 					</a>
 				</div>
 				<div class="user">
-					<a target="_blank" href="#">登录</a> <span>|</span> <a
-						target="_blank" href="#">免费注册</a>
+					<a target="_blank" href="tologin">登录</a> <span>|</span> <a
+						target="_blank" href="toRegister">免费注册</a>
 				</div>
 				<div class="phone">
 					<a href="#"> <em></em> <span>手机逛澳猫</span>
@@ -34,7 +34,7 @@
 			<!-- 头部右边 -->
 			<div class="headRight">
 				<ul>
-					<li><a href="#">我的订单</a></li>
+					<li><a href="getItems?uid=${user.id}">我的订单</a></li>
 					<span>|</span>
 					<li class="erWrap"><strong></strong> <a href="#">个人中心</a> <em></em>
 						<p class="headEr">

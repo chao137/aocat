@@ -34,9 +34,9 @@ $(function() {
 			};
 	});
 	// 删除
-	$('.IAbdw .delet').click(function(event) {
+	/*$('.IAbdw .delet').click(function(event) {
 		$(this).parentsUntil('.IAbdArea').remove();
-	});
+	});*/
 	// 购物车金额结算
 	$('.IAul .reduce').click(function(event) {
 		var n=parseFloat($(this).siblings('input').val());

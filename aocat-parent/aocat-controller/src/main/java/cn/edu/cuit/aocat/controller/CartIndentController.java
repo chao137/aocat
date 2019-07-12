@@ -10,4 +10,8 @@ public class CartIndentController {
 	public String toCartIndent() {
 		return "Cart-indent";
 	}
+	
+//	public String CalAmount() {
+//		
+//	}
 }

@@ -1,23 +1,34 @@
 package cn.edu.cuit.aocat.entity;
 
-import java.beans.Transient;
 import java.io.Serializable;
 
-public class Goods implements Serializable{
+public class GoodsAndItem implements Serializable{
 
 	private static final long serialVersionUID = 1L;
-	private int id;
+	private int gid;
+	private int uid;
+	private int itemid;
 	private String name;
 	private double price;
-	private int num;
-	private String img;
-	private int type;
+	private int unum;
 	
-	public int getId() {
-		return id;
+	public int getItemid() {
+		return itemid;
 	}
-	public void setId(int id) {
-		this.id = id;
+	public void setItemid(int itemid) {
+		this.itemid = itemid;
+	}
+	public int getGid() {
+		return gid;
+	}
+	public void setGid(int gid) {
+		this.gid = gid;
+	}
+	public int getUid() {
+		return uid;
+	}
+	public void setUid(int uid) {
+		this.uid = uid;
 	}
 	public String getName() {
 		return name;
@@ -31,11 +42,11 @@ public class Goods implements Serializable{
 	public void setPrice(double price) {
 		this.price = price;
 	}
-	public int getNum() {
-		return num;
+	public int getUnum() {
+		return unum;
 	}
-	public void setNum(int num) {
-		this.num = num;
+	public void setUnum(int unum) {
+		this.unum = unum;
 	}
 	public String getImg() {
 		return img;
@@ -49,4 +60,6 @@ public class Goods implements Serializable{
 	public void setType(int type) {
 		this.type = type;
 	}
+	private String img;
+	private int type;
 }

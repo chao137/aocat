@@ -25,7 +25,7 @@
 			<div class="loginout">
 				<a href="tologout">退出</a>
 				<span>|</span>
-				<a href="#">返回首页</a>
+				<a href="toGoods">返回首页</a>
 			</div>
 			<div class="phone loginphone">
 				<a href="#">
@@ -37,7 +37,7 @@
 		<div class="headRight">
 			<ul>
 				<li><a class="everday" href="#">每日签到</a></li><span>|</span>
-				<li><a href="getItems?uid=${user.id}">我的订单</a></li><span>|</span>
+				<li><a href="getAmount?uid=${user.id }">我的订单</a></li><span>|</span>
 				<li class="erWrap">
 					<strong></strong>
 					<a href="#">个人中心</a>

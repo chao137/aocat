@@ -39,7 +39,7 @@
 			<!-- 头部右边 -->
 			<div class="headRight">
 				<ul>
-					<li><a href="getItems?uid=${user.id}">我的订单</a></li>
+					<li><a href="getAmount?uid=${user.id }">我的订单</a></li>
 					<span>|</span>
 					<li class="erWrap"><strong></strong> <a href="#">个人中心</a> <em></em>
 						<p class="headEr">

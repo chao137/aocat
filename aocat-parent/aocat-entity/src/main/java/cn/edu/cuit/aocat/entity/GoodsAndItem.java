@@ -10,8 +10,15 @@ public class GoodsAndItem implements Serializable{
 	private int itemid;
 	private String name;
 	private double price;
+	private double singlePrice;
 	private int unum;
 	
+	public double getSinglePrice() {
+		return singlePrice;
+	}
+	public void setSinglePrice(double singlePrice) {
+		this.singlePrice = singlePrice;
+	}
 	public int getItemid() {
 		return itemid;
 	}

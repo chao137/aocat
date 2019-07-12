@@ -1,3 +1,6 @@
+<%@page import="org.springframework.ui.Model"%>
+<%@page import="cn.edu.cuit.aocat.entity.GoodsAndItem"%>
+<%@page import="java.util.List"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
@@ -11,7 +14,7 @@
 <link rel="stylesheet" href="static/css/base.css">
 <link rel="stylesheet" href="static/css/Cart.css">
 <script>
-	$(function() {
+ 	$(function() {
 		// 购物车的复选框全选
 		$('.Allcheck').click(function(event) {
 			if ($(this).hasClass('checked')) {
@@ -110,7 +113,7 @@
 					</a>
 				</div>
 				<div class="loginout">
-					<a href="#">退出</a> <span>|</span> <a href="#">返回首页</a>
+					<a href="tologout">退出</a> <span>|</span> <a href="toGoods">返回首页</a>
 				</div>
 				<div class="phone loginphone">
 					<a href="#"> <em></em> <span>手机逛澳猫</span>
@@ -323,8 +326,8 @@
 							</p>
 							<ul class="IAul">
 								<li class="IAtax">￥<u>11.40</u></li>
-								<li class="price"><strong>¥ <u>${items.price }</u></strong><br>
-									<s>125元</s></li>
+								<li class="price"><strong>¥ <u>${items.singlePrice }</u></strong><br>
+									<!-- <s>125元</s> --></li>
 								<li class="num"><span class="reduce">-</span> <input
 									id="itemsnum" type="text" value="${items.unum }"> <span
 									class="add">+</span></li>
@@ -1054,11 +1057,7 @@
 					success : function(res) {
 						if (res == "sucess") {
 							alert("删除成功!");
-							window.location.href = "getItems?uid=" + $
-							{
-								user.id
-							}
-							;
+							window.location.href = "getItems?uid=" + ${user.id};
 						}
 						if (res == "failed") {
 							alert("删除失败!");
@@ -1069,13 +1068,14 @@
 					}
 				});
 			});
-			$('.add').click(function() {
+ 			$('.add').click(function() {
 				$.ajax({
 					url : "updateNum",
 					data : {
 						itemid : $("#shopid").val(),
 						itemnum : $('#itemsnum').val()
 					},
+					type:"post",
 					dataType : "text",
 					success : function(res) {
 						if (res == "sucess") {
@@ -1102,6 +1102,7 @@
 						itemid : $("#shopid").val(),
 						itemnum : $('#itemsnum').val()
 					},
+					type:"post",
 					dataType : "text",
 					success : function(res) {
 						if (res == "sucess") {

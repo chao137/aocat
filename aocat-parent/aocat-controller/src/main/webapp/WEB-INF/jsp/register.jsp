@@ -55,7 +55,7 @@
 				<div class="MCup clearfix">
 					<div class="MCright W310">
 						<h3 class="clearfix">
-							<span>注册澳猫团</span>
+							<span>注册澳猫团</span><a target="_blank" href="tologin">已有账号?去登录</a>
 						</h3>
 						<form id="logdata" action="userRegister" method="post">
 							<p class="userName">

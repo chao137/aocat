@@ -76,7 +76,8 @@ public class CartController {
 			gitem.setGid(goods.getId());
 			gitem.setImg(goods.getImg());
 			gitem.setName(goods.getName());
-			gitem.setPrice(goods.getPrice());
+			gitem.setPrice(cart.getPrice());
+			gitem.setSinglePrice(goods.getPrice());
 			gitem.setType(goods.getType());
 			gitem.setUid(uid);
 			gitem.setUnum(cart.getNum());
@@ -106,9 +107,13 @@ public class CartController {
 	public String UpdateNum(@RequestParam("itemid")int itemsid,@RequestParam("itemnum")int itemsnum) {
 		System.out.println("id:"+itemsid+"num:"+itemsnum);
 		Carts carts = cartService.findByItemsId(itemsid);
+		Goods goods = goodsService.findByGoodsId(carts.getGoodsid());
 		carts.setNum(itemsnum);
+//		System.out.println(carts.getPrice());
 		int ret = cartService.UpdateNum(carts);
-		System.out.println("line:"+ret);
+		carts.setPrice(itemsnum*goods.getPrice());
+		int rt = cartService.UpdatePrice(carts);
+		System.out.println("line:"+rt);
 		String status = null; 
 		if(ret > 0) {
 			status = "success";

@@ -22,8 +22,10 @@
 					</a>
 				</div>
 				<div class="user">
-					<a target="_blank" href="tologin">登录</a> <span>|</span> <a
-						target="_blank" href="toRegister">免费注册</a>
+					<c:if test="${user.id == null}">
+						<a target="_blank" href="tologin">登录</a> <span>|</span> <a
+							target="_blank" href="toRegister">免费注册</a>
+					</c:if>
 				</div>
 				<div class="phone">
 					<a href="#"> <em></em> <span>手机逛澳猫</span>

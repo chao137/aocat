@@ -27,6 +27,14 @@
 			<mvc:exclude-mapping path="/userRegister" />
 			<mvc:exclude-mapping path="/toGoods" />
 			<mvc:exclude-mapping path="/static/**"/>
+			<mvc:exclude-mapping path="/static/**/**"/>
+			<mvc:exclude-mapping path="/static/**/*.*"/>
+			<mvc:exclude-mapping path="/static/**/*.js"/>
+			<mvc:exclude-mapping path="/static/**/*.min.js"/>
+			<mvc:exclude-mapping path="/static/**/*.css"/>
+			<mvc:exclude-mapping path="/static/**/*.png"/>
+			<mvc:exclude-mapping path="/static/**/*.gif"/>
+			<mvc:exclude-mapping path="/static/**/*.jpg"/>
 			<bean class="cn.edu.cuit.aocat.interceptor.UrlInterceptor"></bean>
 		</mvc:interceptor>
 	</mvc:interceptors>

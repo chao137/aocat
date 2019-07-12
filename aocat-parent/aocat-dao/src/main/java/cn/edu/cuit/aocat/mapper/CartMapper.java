@@ -22,6 +22,8 @@ public interface CartMapper {
 	public Carts findByItemsId(int id);
 	@Update("update shopitems set item_num = #{num} where item_id = #{id}")
 	public int UpdateNum(Carts cart);
+	@Update("update shopitems set item_price=#{price} where item_id = #{id}")
+	public int UpdatePrice(Carts cart);
 	@Delete("delete from shopitems where item_id = #{id}")
 	public int DeleteCart(int id);
 }

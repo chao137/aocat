@@ -11,4 +11,5 @@ public interface CartService {
 	public int UpdateNum(Carts cart);
 	public int DeleteCart(int id);
 	public Carts findByItemsId(int id);
+	public int UpdatePrice(Carts cart);
 }

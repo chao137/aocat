@@ -40,5 +40,9 @@ public class CartServiceImpl implements CartService {
 	public Carts findByItemsId(int id) {
 		return cartMapper.findByItemsId(id);
 	}
+	@Override
+	public int UpdatePrice(Carts cart) {
+		return cartMapper.UpdatePrice(cart);
+	}
 
 }

@@ -22,7 +22,7 @@
 					</a>
 				</div>
 			<div class="loginout">
-				<a href="#">退出</a>
+				<a href="tologout">退出</a>
 				<span>|</span>
 				<a href="#">返回首页</a>
 			</div>

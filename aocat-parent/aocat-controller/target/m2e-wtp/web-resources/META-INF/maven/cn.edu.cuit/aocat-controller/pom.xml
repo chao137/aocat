@@ -49,6 +49,12 @@
 			<groupId>com.101tec</groupId>
 			<artifactId>zkclient</artifactId>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
+			</dependency>
+
 		<!-- 5 为了解决使用框架时候出错了，想看到详细加日志 https://docs.spring.io/spring/docs/5.1.8.RELEASE/spring-framework-reference/htmlsingle/#overview-logging-log4j -->
 		<dependency>
 			<groupId>org.apache.logging.log4j</groupId>

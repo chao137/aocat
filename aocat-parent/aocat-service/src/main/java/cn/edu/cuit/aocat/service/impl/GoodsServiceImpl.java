@@ -28,4 +28,9 @@ public class GoodsServiceImpl implements GoodsService {
 		return pageInfo;
 	}
 
+	@Override
+	public Goods findByGoodsId(int id) {
+		return goodsMapper.finByGoodsId(id);
+	}
+
 }

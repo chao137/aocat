@@ -836,7 +836,7 @@
 									<em></em>收藏
 								</div> <!-- <div class="hoverShow wish"><em></em>加入心愿单</div> -->
 								<div class="show">
-									<a class="add" href="#">加入购物车</a> <a class="contrast" href="#">商品对比</a>
+									<a class="add" href="addToCart?uid=${user.id }&gid=${goods.id}">加入购物车</a> <a class="contrast" href="#">商品对比</a>
 								</div>
 								<div class="proImg">
 									<a href="#"> <img class="lazy"
@@ -860,15 +860,35 @@
 				</div>
 				<!-- 底部页码 -->
 				<div class="footNum">
-					<ul>
-						<li class="pre"><a href="#">上一页</a></li>
-						<li class="num current"><a href="#">1</a></li>
-						<li class="num"><a href="#">2</a></li>
-						<li class="num"><a href="#">3</a></li>
-						<li class="last"><a href="#">下一页</a></li>
-						<li class="txt">向第</li>
-						<li class="ipt"><input type="text"></li>
-						<li><button>跳转</button></li>
+					<ul class="pagination">
+						<c:choose>
+							<c:when test="${list.isFirstPage }">
+								<li class="pre">上一页</li>
+							</c:when>
+							<c:otherwise>
+								<li class="pre"><a href="toGoods?pageNum=${list.pageNum-1}">上一页</a></li>
+							</c:otherwise>
+						</c:choose>
+						<c:forEach begin="1" end="${list.pages}" var="i">
+							<c:choose>
+								<c:when test="${list.pageNum==i }">
+									<li class="num current"><a href="toGoods?pageNum=${i}">${i}</a></li>
+								</c:when>
+								<c:otherwise>
+									<li class="num"><a class="page-link"
+										href="toGoods?pageNum=${i}">${i }</a></li>
+								</c:otherwise>
+							</c:choose>
+						</c:forEach>
+						<c:choose>
+							<c:when test="${list.isLastPage }">
+								<li class="page-item  disabled">下一页</li>
+							</c:when>
+							<c:otherwise>
+								<li class="page-item "><a class="page-link"
+									href="toGoods?pageNum=${list.pageNum+1}">下一页</a></li>
+							</c:otherwise>
+						</c:choose>
 					</ul>
 				</div>
 			</div>
@@ -1077,5 +1097,8 @@
 	<script src="static/js/jquery-1.7.2.min.js"></script>
 	<script src="static/js/jquery.lazyload.min.js"></script>
 	<script src="static/js/base.js"></script>
+	<script src="static/popper/popper.min.js"></script>
+	<script src="static/bootstrap/js/bootstrap.min.js"></script>
+
 </body>
 </html>

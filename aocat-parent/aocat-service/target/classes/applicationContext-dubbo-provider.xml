@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xmlns:dubbo="http://dubbo.apache.org/schema/dubbo" xmlns:schemaLocation="http://code.alibabatech.com/schema/dubbo"
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://dubbo.apache.org/schema/dubbo"
+	xmlns:schemaLocation="http://code.alibabatech.com/schema/dubbo"
 	xsi:schemaLocation="http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd
 		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://dubbo.apache.org/schema/dubbo http://dubbo.apache.org/schema/dubbo/dubbo.xsd">
@@ -16,6 +17,10 @@
 	<dubbo:protocol name="dubbo" port="20880" />
 
 	<!-- 声明需要暴露的服务接口 -->
-	<dubbo:service interface="cn.edu.cuit.aocat.service.GoodsService" ref="goodsService" />
-	<dubbo:service interface="cn.edu.cuit.aocat.service.UserService" ref="userService"/>
+	<dubbo:service interface="cn.edu.cuit.aocat.service.GoodsService"
+		ref="goodsService" />
+	<dubbo:service interface="cn.edu.cuit.aocat.service.UserService"
+		ref="userService" />
+	<dubbo:service interface="cn.edu.cuit.aocat.service.CartService"
+		ref="cartService" />
 </beans>

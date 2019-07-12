@@ -19,7 +19,7 @@ public class GoodsController {
 	@Autowired
 	private GoodsService goodsService;
 	
-	@RequestMapping("/goods")
+	@RequestMapping("/toGoods")
 	public String GoodsList(Model model, @RequestParam(required=false,defaultValue="1")int pageNum) {
 		PageInfo<Goods> pageInfo = goodsService.findGoods(pageNum,PageConstant.PAGE_SIZE);
 		model.addAttribute("list", pageInfo);

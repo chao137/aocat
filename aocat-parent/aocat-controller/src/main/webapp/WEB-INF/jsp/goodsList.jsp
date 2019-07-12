@@ -81,16 +81,16 @@
 												<li class="page-item disabled"><a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a></li>
 											</c:when>
 											<c:otherwise>
-												<li class="page-item"><a class="page-link" href="goods?pageNum=${list.pageNum-1}" tabindex="-1" aria-disabled="true">Previous</a></li>
+												<li class="page-item"><a class="page-link" href="toGoods?pageNum=${list.pageNum-1}" tabindex="-1" aria-disabled="true">Previous</a></li>
 											</c:otherwise>
 										</c:choose>
 										<c:forEach begin="1" end="${list.pages}" var="i">
 											<c:choose>
 												<c:when test="${list.pageNum==i }">
-													<li class="page-item active" aria-current="page"><a class="page-link" href="goods?pageNum=${i}">${i} <span class="sr-only">(current)</span></a></li>
+													<li class="page-item active" aria-current="page"><a class="page-link" href="toGoods?pageNum=${i}">${i} <span class="sr-only">(current)</span></a></li>
 												</c:when>
 												<c:otherwise>
-													<li class="page-item"><a class="page-link" href="goods?pageNum=${i}">${i }</a></li>
+													<li class="page-item"><a class="page-link" href="toGoods?pageNum=${i}">${i }</a></li>
 												</c:otherwise>
 											</c:choose>
 										</c:forEach>
@@ -99,7 +99,7 @@
 												<li class="page-item  disabled"><a class="page-link" href="#">Next</a></li>
 											</c:when>
 											<c:otherwise>
-												<li class="page-item "><a class="page-link" href="goods?pageNum=${list.pageNum+1}">Next</a></li>
+												<li class="page-item "><a class="page-link" href="toGoods?pageNum=${list.pageNum+1}">Next</a></li>
 											</c:otherwise>
 										</c:choose>
 									</ul>

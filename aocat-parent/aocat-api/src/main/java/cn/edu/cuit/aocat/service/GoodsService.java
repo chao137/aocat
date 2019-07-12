@@ -7,5 +7,5 @@ import cn.edu.cuit.aocat.entity.Goods;
 public interface GoodsService {
 
 	public PageInfo<Goods> findGoods(int pageNum, int pageSize);
-
+	public Goods findByGoodsId(int id);
 }

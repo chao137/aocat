@@ -8,7 +8,7 @@
 	<!-- 配置好数据源 ,替代MyBatis的配置文件 -->
 	<bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
 		<property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
-		<property name="url" value="jdbc:mysql://localhost:3306/cuit"></property>
+		<property name="url" value="jdbc:mysql://localhost:3306/cuit?useSSL=false"></property>
 		<property name="username" value="root"></property>
 		<property name="password" value="root"></property>
 	</bean>

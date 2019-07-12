@@ -9,6 +9,8 @@
 <link rel="stylesheet" href="static/css/reset.css">
 <link rel="stylesheet" href="static/css/base1.css">
 <link rel="stylesheet" href="static/css/login.css">
+<link rel="stylesheet" href="static/jquery/jquery-confirm.min.css">
+<link rel="stylesheet" href="static/layui/layui.css">
 <!-- 视图窗口，移动端特属的标签。 -->
 <meta name="viewport"
 	content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no" />
@@ -57,14 +59,14 @@
 						<h3 class="clearfix">
 							<span>登录澳猫团</span> <a target="_blank" href="register.html">免费注册</a>
 						</h3>
-						<form id = "logdata" action="login" method="post">
+						<form id="formdata" action="login" method="post">
 							<p class="userName">
 								<em></em> <input id="phone" name="name" class="W310"
 									placeholder="请输入您的手机号/邮箱" type="text">
 							</p>
 							<p class="passWord">
-								<em></em> <input class="W310" name="pass" placeholder="请输入密码"
-									type="password">
+								<em></em> <input id="pass" class="W310" name="pass"
+									placeholder="请输入密码" type="password">
 							</p>
 							<!-- <p class="clearfix yzm">
 							<input type="text" placeholder="验证码"> <span class="Ypic">
@@ -75,7 +77,7 @@
 								<span class="checkbox checked"></span> <span>记住密码</span> <a
 									target="_blank" href="#">忘记密码？</a>
 							</p>
-							<input type="submit" class="loGin W310" value="登录" />
+							<input type="submit" class="loGin W310" value="登录">
 						</form>
 					</div>
 					<div class="MCleft W115">
@@ -120,21 +122,30 @@
 			<div class="ALLN"></div>
 		</div>
 	</footer>
-	<script src="static/js/jquery-1.7.2.min.js"></script>
+	<script src="static/jquery/jquery-3.4.1.min.js"></script>
 	<script src="static/js/jquery.lazyload.min.js"></script>
 	<script src="static/js/login.js"></script>
-
+	<script src="static/jquery/jquery-confirm.min.js"></script>
+	<script src="static/layui/layui.js"></script>
 	<script type="text/javascript">
-/*  		$(document).ready(function() {
+/* /* 		 $(document).ready(function() {
 			$(".loGin").click(function() {
-				
 				$.ajax({
-					url: "login",
-					type: "post",
-					data: $("#logdata").serilaze(),
-					dataType: "text",
-					success: function (data){
-						alert("hello");
+					url : "login",
+					type : "post",
+					data : $('#formdata').serialize(),
+					dataType : "text",
+					async : false,
+					success : function(data) { */
+/* 						if (data == 'success') {
+							window.location.href = "toGoods";
+						}
+						if (data == 'fail') {
+							alert("用户名或密码不正确!");
+						}
+					},
+					error : function() {
+						alert("异常");
 					}
 				});
 			});

@@ -42,8 +42,6 @@ public class CartController {
 		
 		User user = userService.findByUserId(uid);
 		Goods goods = goodsService.findByGoodsId(gid);
-//		System.out.println(user);
-//		System.out.println(goods);
 		Carts cart2 = cartService.findByUserIdAndGoodsId(uid, gid);
 		if (cart2 != null) {
 			//如果商品已存在，则更改数量

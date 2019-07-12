@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,7 +37,7 @@
 		<div class="headRight">
 			<ul>
 				<li><a class="everday" href="#">每日签到</a></li><span>|</span>
-				<li><a href="#">我的订单</a></li><span>|</span>
+				<li><a href="getItems?uid=${user.id}">我的订单</a></li><span>|</span>
 				<li class="erWrap">
 					<strong></strong>
 					<a href="#">个人中心</a>
@@ -240,16 +241,18 @@
 			</ul>
 		</h4>
 		<div class="prouduct clearfix">
-			<ul class="blur clearfix">
-				<li class="first">
-				<p>【全球购】澳佳宝Blackmores儿童益脑多维矿物质咀嚼片60粒营养健康澳洲直邮</p>
-				</li>
-				<li>1</li>
-				<li>￥116.00</li>
-				<li>200g</li>
-				<li>￥114.0</li>
-				<li>￥116.00</li>
-			</ul>
+			<c:forEach items="${gmsg }" var="gmsg">
+				<ul class="blur clearfix">
+					<li class="first">
+					<p>${gmsg.name }</p>
+					</li>
+					<li>${gmsg.unum }</li>
+					<li>￥${gmsg.singlePrice }</li>
+					<li>200g</li>
+					<li>￥114.0</li>
+					<li>￥${gmsg.price }</li>
+				</ul>
+			</c:forEach>
 		</div>
 		<div class="freight Public clearfix">
 			<span class="left">
@@ -270,7 +273,7 @@
 		<div class="Alladd Public clearfix">
 			<span class="right">
 				<em>合计</em>
-				<em class="r">￥116.00</em>
+				<em class="r">￥${amount }</em>
 			</span>
 		</div>
 	</div>
@@ -290,7 +293,7 @@
 			</p>
 			<p class="submit clearfix">
 				<span>返回购物车</span>
-				<span>实付总额： <em>￥116.00</em></span>  
+				<span>实付总额： <em>￥${amount }</em></span>  
 				<a href="#">提交订单</a>  
 			</p>
 			<p class="protocol clearfix">

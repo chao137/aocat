@@ -352,7 +352,7 @@
 				<div class="IAbdfoot">
 					<span class="checkbox Allcheck"></span> <span>全选</span> <span
 						class="Information">删除选中商品</span> <a id="tocal"
-						href="toCartIndent">去结算</a>
+						href="getAmount?uid=${user.id }">去结算</a>
 					<p>
 						<strong>已选商品<b id="allnum"> 1 </b>件
 						</strong> <strong>总价（不含运费）：<b>￥<u id="allpri">114.00</u></b></strong><br>

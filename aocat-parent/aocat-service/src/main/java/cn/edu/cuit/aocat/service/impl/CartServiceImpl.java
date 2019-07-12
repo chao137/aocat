@@ -12,7 +12,7 @@ import cn.edu.cuit.aocat.service.CartService;
 public class CartServiceImpl implements CartService {
 
 	@Autowired
-	CartMapper cartMapper ;
+	CartMapper cartMapper;
 	@Override
 	public int AddToCart(Carts carts) {
 		int ret = cartMapper.AddToCart(carts);

@@ -9,16 +9,6 @@
 	<artifactId>aocat-service</artifactId>
 	<dependencies>
 		<dependency>
-			<groupId>cn.edu.cuit</groupId>
-			<artifactId>aocat-api</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
-		<dependency>
-			<groupId>cn.edu.cuit</groupId>
-			<artifactId>aocat-dao</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
-		<dependency>
 			<groupId>org.apache.dubbo</groupId>
 			<artifactId>dubbo</artifactId>
 		</dependency>
@@ -34,7 +24,17 @@
 		</dependency>
 		<dependency>
 			<groupId>cn.edu.cuit</groupId>
+			<artifactId>aocat-dao</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>cn.edu.cuit</groupId>
 			<artifactId>aocat-entity</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>cn.edu.cuit</groupId>
+			<artifactId>aocat-api</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>

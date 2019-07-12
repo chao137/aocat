@@ -4,13 +4,11 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>登录页-澳猫团</title>
+<title>注册页-澳猫团</title>
 <link rel="shortcut icon" href="favicon.ico">
 <link rel="stylesheet" href="static/css/reset.css">
 <link rel="stylesheet" href="static/css/base1.css">
 <link rel="stylesheet" href="static/css/login.css">
-<link rel="stylesheet" href="static/jquery/jquery-confirm.min.css">
-<link rel="stylesheet" href="static/layui/layui.css">
 <!-- 视图窗口，移动端特属的标签。 -->
 <meta name="viewport"
 	content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no" />
@@ -31,7 +29,7 @@
 			<div class="logo">
 				<a href="#">澳猫网</a>
 			</div>
-			<div class="LAStxt">欢迎登录</div>
+			<div class="LAStxt">欢迎注册</div>
 			<div class="search">
 				<div class="txt">
 					<input type="text" placeholder="Swisse/澳洲"> <em></em>
@@ -57,28 +55,37 @@
 				<div class="MCup clearfix">
 					<div class="MCright W310">
 						<h3 class="clearfix">
-							<span>登录澳猫团</span> <a target="_blank" href="toRegister">免费注册</a>
+							<span>注册澳猫团</span>
 						</h3>
-						<form id="formdata" action="login" method="post">
+						<form id="logdata" action="userRegister" method="post">
 							<p class="userName">
 								<em></em> <input id="phone" name="name" class="W310"
-									placeholder="请输入您的手机号/邮箱" type="text">
+									placeholder="请输入您的用户名" type="text">
 							</p>
 							<p class="passWord">
-								<em></em> <input id="pass" class="W310" name="pass"
-									placeholder="请输入密码" type="password">
+								<em></em> <input class="W310" name="pass" placeholder="请输入密码"
+									type="password">
+							</p>
+							<p>
+								<em>地址</em> <input class="W310" name="address" placeholder="请输入地址"
+									type="text">
+							</p>
+							<p>
+								<em>电话</em> <input class="W310" name="phone" placeholder="请输入电话"
+									type="text">
 							</p>
 							<!-- <p class="clearfix yzm">
 							<input type="text" placeholder="验证码"> <span class="Ypic">
 								<span class="YP"></span> <a href="#">换一张</a>
 							</span>
 						</p> -->
-							<p class="clearfix Jzmm">
+<!-- 							<p class="clearfix Jzmm">
 								<span class="checkbox checked"></span> <span>记住密码</span> <a
 									target="_blank" href="#">忘记密码？</a>
-							</p>
-							<input type="submit" class="loGin W310" value="登录">
+							</p> -->
+							<input type="submit" class="loGin W310" value="注册" />
 						</form>
+						<p>${msg }</p>
 					</div>
 					<div class="MCleft W115">
 						<img src="static/images/AppEr.png" alt="二维码">
@@ -87,16 +94,6 @@
 							<span>手机可直接访问</span> <strong>m.aumalls.com</strong>
 						</div>
 					</div>
-				</div>
-				<div class="MCdown">
-					<p>使用其他账户登录</p>
-					<ul>
-						<li class="clearfix"><em></em> <a href="#">QQ登录</a></li>
-						<li class="clearfix"><em></em> <a href="#">微博登录</a></li>
-						<li class="clearfix"><em></em> <a href="#">腾讯微博</a></li>
-						<li class="clearfix"><em></em> <a href="#">微信登录</a></li>
-						<li class="clearfix BN"><em></em> <a href="#">百度登录</a></li>
-					</ul>
 				</div>
 			</div>
 		</div>
@@ -122,34 +119,25 @@
 			<div class="ALLN"></div>
 		</div>
 	</footer>
-	<script src="static/jquery/jquery-3.4.1.min.js"></script>
+	<script src="static/js/jquery-1.7.2.min.js"></script>
 	<script src="static/js/jquery.lazyload.min.js"></script>
 	<script src="static/js/login.js"></script>
-	<script src="static/jquery/jquery-confirm.min.js"></script>
-	<script src="static/layui/layui.js"></script>
+
 	<script type="text/javascript">
-/* /* 		 $(document).ready(function() {
-			$(".loGin").click(function() {
-				$.ajax({
-					url : "login",
-					type : "post",
-					data : $('#formdata').serialize(),
-					dataType : "text",
-					async : false,
-					success : function(data) { */
-/* 						if (data == 'success') {
-							window.location.href = "toGoods";
-						}
-						if (data == 'fail') {
-							alert("用户名或密码不正确!");
-						}
-					},
-					error : function() {
-						alert("异常");
-					}
-				});
-			});
-		}); */
+		/*  		$(document).ready(function() {
+		 $(".loGin").click(function() {
+		
+		 $.ajax({
+		 url: "login",
+		 type: "post",
+		 data: $("#logdata").serilaze(),
+		 dataType: "text",
+		 success: function (data){
+		 alert("hello");
+		 }
+		 });
+		 });
+		 }); */
 	</script>
 </body>
 </html>

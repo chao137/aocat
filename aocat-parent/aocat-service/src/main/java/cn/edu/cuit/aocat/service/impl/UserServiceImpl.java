@@ -8,8 +8,8 @@ import cn.edu.cuit.aocat.mapper.UserMapper;
 import cn.edu.cuit.aocat.service.UserService;
 
 @Service("userService")
-public class UserServiceImpl implements UserService{
-	
+public class UserServiceImpl implements UserService {
+
 	@Autowired
 	private UserMapper userMapper;
 
@@ -22,6 +22,16 @@ public class UserServiceImpl implements UserService{
 	@Override
 	public User findByUserId(int id) {
 		return userMapper.findByUserId(id);
+	}
+	public boolean insertUser(User user) {
+		// TODO Auto-generated method stub
+		int ret = userMapper.findByName(user.getName());
+		if (ret > 0) {
+			return false;
+		} else {
+			userMapper.insertUser(user);
+			return true;
+		}
 	}
 
 }

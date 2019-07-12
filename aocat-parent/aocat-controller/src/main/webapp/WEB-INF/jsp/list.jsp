@@ -199,7 +199,7 @@
 			</div>
 		</div>
 		<!--购物车-->
-		<a href="#" class="buy_car">
+		<a href="getItems?uid=${user.id}" class="buy_car">
 			<p>购物车</p> <em>0</em>
 		</a>
 		<!-- 新会员 -->

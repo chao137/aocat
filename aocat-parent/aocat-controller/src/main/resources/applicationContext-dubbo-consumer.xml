@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:dubbo="http://dubbo.apache.org/schema/dubbo"
-	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://dubbo.apache.org/schema/dubbo http://dubbo.apache.org/schema/dubbo/dubbo.xsd
 		http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
 
@@ -15,4 +18,16 @@
 	<dubbo:reference id="goodsService" interface="cn.edu.cuit.aocat.service.GoodsService" />
 	<dubbo:reference id="userService" interface="cn.edu.cuit.aocat.service.UserService" />
 	<dubbo:reference id="cartService" interface="cn.edu.cuit.aocat.service.CartService"/>
+	<mvc:interceptors>
+		<mvc:interceptor>
+			<mvc:mapping path="/**" />
+			<mvc:exclude-mapping path="/tologin" />
+			<mvc:exclude-mapping path="/login" />
+			<mvc:exclude-mapping path="/toRegister" />
+			<mvc:exclude-mapping path="/userRegister" />
+			<mvc:exclude-mapping path="/toGoods" />
+			<mvc:exclude-mapping path="/static/**"/>
+			<bean class="cn.edu.cuit.aocat.interceptor.UrlInterceptor"></bean>
+		</mvc:interceptor>
+	</mvc:interceptors>
 </beans>

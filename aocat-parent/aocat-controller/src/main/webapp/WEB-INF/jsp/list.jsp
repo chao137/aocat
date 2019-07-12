@@ -26,6 +26,9 @@
 						<a target="_blank" href="tologin">登录</a> <span>|</span> <a
 							target="_blank" href="toRegister">免费注册</a>
 					</c:if>
+					<c:if test="${user.id != null}">
+						<a target="_blank" href="tologout">退出</a>
+					</c:if>
 				</div>
 				<div class="phone">
 					<a href="#"> <em></em> <span>手机逛澳猫</span>
@@ -40,6 +43,7 @@
 					<span>|</span>
 					<li class="erWrap"><strong></strong> <a href="#">个人中心</a> <em></em>
 						<p class="headEr">
+						<a href="toUserInfo">个人信息</a>
 							<a href="#">我的优惠券</a> <a href="#">账户安全</a> <a class="last"
 								href="#">售后管理</a>
 						</p></li>

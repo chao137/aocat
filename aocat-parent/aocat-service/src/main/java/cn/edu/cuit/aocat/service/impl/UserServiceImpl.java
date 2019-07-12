@@ -34,4 +34,10 @@ public class UserServiceImpl implements UserService {
 		}
 	}
 
+	@Override
+	public void updateUser(User user) {
+		// TODO Auto-generated method stub
+		userMapper.updateUserInfo(user);
+	}
+
 }

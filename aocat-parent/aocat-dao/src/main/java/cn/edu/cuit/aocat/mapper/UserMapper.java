@@ -3,6 +3,7 @@ package cn.edu.cuit.aocat.mapper;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.Update;
 
 import cn.edu.cuit.aocat.entity.User;
 
@@ -17,4 +18,6 @@ public interface UserMapper {
 	void insertUser(User user);
 	@Select("select count(*) from users where user_name = #{name}")
 	int findByName(String name);
+	@Update("update users set user_name=#{name},user_address=#{address},user_phone=#{phone} where user_id=#{id}")
+	void updateUserInfo(User user);
 }

@@ -7,4 +7,5 @@ public interface UserService {
 	User login(String name, String pass);
 	User findByUserId(int id);
 	boolean insertUser(User user);
+	void updateUser(User user);
 }

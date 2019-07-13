@@ -67,6 +67,7 @@ public class CartController {
 		List<GoodsAndItem> glist = new ArrayList<>();
 		List<Carts> clist = cartService.findItemsByUserId(uid);
 		Iterator<Carts> iter = clist.iterator();
+		double amount = 0;
 		while(iter.hasNext()) {
 			Carts cart = iter.next();
 			Goods goods = goodsService.findByGoodsId(cart.getGoodsid());
@@ -81,8 +82,10 @@ public class CartController {
 			gitem.setUnum(cart.getNum());
 			gitem.setItemid(cart.getId());
 			glist.add(gitem);
+			amount += cart.getPrice();
 		}
 		model.addAttribute("glist",glist);
+		model.addAttribute("mount",amount);
 		return "Cart";
 	}
 	

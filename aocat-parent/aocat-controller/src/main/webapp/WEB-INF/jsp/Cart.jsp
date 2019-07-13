@@ -344,7 +344,7 @@
 				<div class="account">
 					<ul>
 						<li>活动优惠 ：-￥<u>0.00</u></li>
-						<li>商品应付总计 ：￥<u>114.00</u></li>
+						<li>商品应付总计 ：￥<u>${mount }</u></li>
 						<li class="main">免关税</li>
 						<li class="mprice">￥<u>11.4</u></li>
 					</ul>
